@@ -1,181 +1,25 @@
+---
+---
 
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link rel="shortcut icon" href="paper_dragon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- <link rel="shortcut icon" href="paper_dragon.ico"> -->
-    <title>Songhua Wu's Homepage </title>
-    <base href="https://scifancier.github.io/index.html">
-    <!-- <base href="./index.html"> -->
-    
-    <script type="text/javascript" src="//ra.revolvermaps.com/0/0/8.js?i=0gh03rwju0o&amp;m=0&amp;s=170&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;v0=80" async="async"></script>
-    </head>
-
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/jpg" href={{ site.favicon }}>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<h1 style="padding-left: 0.5em">Songhua Wu</h1><hr>
-<td id="layout-menu">
-    <div class="menu-item"><a href="index.html" class="current">Home</a></div>
-    <!--<div class="menu-item"><a href="news.html">News</a></div>-->
-    <!--&lt;!&ndash;<div class="menu-item"><a href="groups.html">Group</a></div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="menu-item"><a href="code.html">Codes</a></div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="menu-item"><a href="teaching.html">Teaching</a></div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="menu-item"><a href="service.html">Service</a></div>&ndash;&gt;-->
-    <!--<div class="menu-item"><a href="publications.html">Publications</a></div>-->
-</td>
-<td id="layout-content">
 
-    <!--<h1 style="margin-top: 0em">Home</h1><br>-->
-  <!--  <p>[ <a href="#news">News</a>,
-        <a href="#interest">Research Interests</a>,
-        <a href="#job">Job Experience</a>,
-        <a href="#edu">Education</a> ]</p>-->
+{% include header.html %}
+{% include about.html %}
+{% include research.html %}
+{% include teaching.html %}
+{% include contact.html %}
+{% include footer.html %}
 
-    <table class="imgtable"><tr valign="center">
-        <td><img src="songhua.jpg" alt="songhua" border="0" width=140/></td>
-        <td align="left">
-            <br>
-            <p><span style="font-size: 110%">Songhua Wu</span></p>
-            <!--<p>-->
-                <!--Lecturer (Assistant Professor) in Machine Learning<br>-->
-                <!--<a href="https://sydney.edu.au/engineering/about/school-of-computer-science.html" target="_blank">School of Computer Science</a><br>-->
-                <!--<a href="https://www.riken.jp/en/" target="_blank">Facult of Engineering</a><br>-->
-                <!--<a href="https://sydney.edu.au/" target="_blank">The University of Sydney</a>-->
-            <!--</p>-->
-            
-                 <!--<p>-->
-                <!--Visiting Scientist<br>-->
-                <!--<a href="https://aip.riken.jp/" target="_blank">Center for Advanced Intelligence Project</a><br>-->
-                <!--<a href="https://sydney.edu.au/engineering/" target="_blank">RIKEN</a>, Japan<br>-->
-            <!--</p>-->
-
-            <p>
-                Address: Room 315/J12/ 1 Cleveland St, Darlington, NSW 2008, Australia <br>
-                E-mail: sowu4341 [at] uni.sydney.edu.au<br>
-                <!--<a href="https://scholar.google.com.au/citations?user=EiLdZ_YAAAAJ&hl=en" target="_blank">[Google Scholar]</a>-->
-                <!--<a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Tongliang" target="_blank">[DBLP]</a>-->
-            </p>
-        </td>
-    </table>
-    <p>
-
-    <h2><a name="news"></a>About Me</h2>
-    <div>
-        <h2><hr><a name="news"></a>Research Interests</h2>
-        My research interests lie in providing mathematical and theoretical foundations to justify and understand (deep) machine learning models and designing efficient learning algorithms for problems in computer vision and data mining, with a particular emphasis on 
-   <ul>
-        <li><p>Weakly supervised deep learning (e.g., deep transfer learning and learning with label noise)</p></li>
-        <li><p>Deep adversarial learning (e.g., adversarial attack and defense)</p></li>
-        <li><p>Deep unsupervised learning (e.g., clustering and matrix factorisation)</p></li>
-        <li><p>Image and video processing (e.g., deep classification algorithms)</p></li>
-        <li><p>Statistical deep learning theory (e.g., hypothesis complexity and generalisation error) </p></li>
-       </ul>
-     <!--<div>-->
-        <!--<h2><hr><a name="news"></a>News</h2>-->
-        <!--<ul> -->
-            <!--<li><p>6/2020, papers on label-noise learning, transfer learning, and adversarial learning have been accepted by ICML.  </p></li>-->
-            <!---->
-            <!--<li><p>5/2020, one paper has been accepted by IEEE TIP.  </p></li>-->
-            <!---->
-            <!--<li><p>4/2020, I was appointed as a visiting scientist with RIKEN, Japan.  </p></li>-->
-            <!---->
-            <!--<li><p>3/2020, Mr Songhua Wu joined our group as a PhD candidate. Welcome! </p></li>-->
-            <!---->
-            <!--<li><p>3/2020, I accepted the invitation to serve as an reviewer for NeurIPS 2020. </p></li>-->
-            <!---->
-            <!--<li><p>3/2020, one paper has been accepted by IEEE TKDE.  </p></li>-->
-            <!---->
-            <!--<li><p>1/2020, I accepted the invitation to serve as an reviewer for SIGKDD 2020. </p></li>-->
-
-            <!--<li><p>1/2020, I gave a talk on estimating transition matrix for label-noise learning at Peking University, Beijing China. </p></li>-->
-            <!---->
-            <!--<li><p>1/2020, I gave a talk on weakly-supervised learning at <a href="https://www.4paradigm.com/">4Paradigm</a>, Beijing China. </p></li>-->
-           <!---->
-            <!--<li><p>1/2020, I gave a talk on label-noise learning at Institute of Information Engineering, Chinese Academy of Science, Beijing China.</p></li>-->
-            <!---->
-            <!--<li><p>1/2020, I gave a talk on finding label noise in data at Hangzhou Dianzi University, Hangzhou China. </p></li>-->
-            <!---->
-            <!--<li><p>1/2020, one paper has been accepted by IEEE TNNLS. </p></li>-->
-            <!---->
-            <!--<li><p>1/2020, one paper has been accepted by IEEE TMM. </p></li>-->
-
-      <!---->
-        <!--</ul>-->
-         <!--See more previous news <a href="news.html">here</a>.-->
-<!--</div>-->
-          <!--<div>-->
-        <!--<h2><hr><a name="news"></a>Selelcted Publications</h2>-->
-              <!--<ul>-->
-            <!---->
-             <!--<li><p>-->
-            <!--Learning with Bounded Instance-and Label-dependent Label Noise. <br>-->
-            <!--Jiacheng Cheng, <b>Tongliang Liu</b>, Kotagiri Rao, and Dacheng Tao.<br>-->
-            <!--In <a href="https://icml.cc/"> ICML</a>, 2020.-->
-            <!--</p></li>-->
-            <!---->
-
-
-            <!--<li><p>-->
-            <!--Label-Noise Robust Domain Adaptation.<br>-->
-            <!--Xiyu. Yu, <b>Tongliang Liu</b>, Mingming Gong, Kun Zhang, Kayhan Batmanghelich, and Dacheng Tao.<br>-->
-             <!--In <a href="https://icml.cc/"> ICML</a>, 2020.-->
-            <!--</p></li>-->
-            <!---->
-            <!---->
-            <!--<li><p>-->
-            <!--Are Anchor Points Really Indispensable in Label-Noise Learning? [<A HREF="https://papers.nips.cc/paper/8908-are-anchor-points-really-indispensable-in-label-noise-learning.pdf">PDF</A>]<br>-->
-            <!--Xiaobo Xia, <b>Tongliang Liu</b>, Nannan Wang, Bo Han, Chen Gong, Gang Niu, and Masashi Sugiyama.<br>-->
-            <!--In <a href="https://nips.cc/">NeurIPS</a>, 2019.-->
-            <!--</p></li>-->
-                  <!---->
-
-                                    <!---->
-            <!--<li><p>-->
-            <!--Learning with Biased Complementary Labels. [<A HREF="https://eccv2018.org/openaccess/content_ECCV_2018/papers/Xiyu_Yu_Learning_with_Biased_ECCV_2018_paper.pdf">PDF</A>]<br>-->
-            <!--Xiyu Yu, <b>Tongliang Liu</b>, Mingming Gong, and Dacheng Tao.<br>-->
-            <!--In <a href="https://eccv2018.org/"> ECCV</a>, 2018.-->
-            <!--</p></li>-->
-                  <!---->
-                  <!---->
-                  <!---->
-            <!--<li><p>-->
-            <!--Domain Adaptation with Conditional Transferable Components. [<A HREF="http://proceedings.mlr.press/v48/gong16.pdf">PDF</A>]<br>-->
-            <!--Mingming Gong, Kun Zhang, <b>Tongliang Liu</b>, Dacheng Tao, Clark Glymour, and Bernhard Schölkopf.<br>-->
-            <!--In <a href="http://icml.cc/2016/"> ICML</a>, 2016.-->
-            <!--</p></li>-->
-                  <!---->
-                                 <!---->
-             <!--<li><p>-->
-            <!--Classification with Noisy Labels by Importance Reweighting. [<A HREF="https://arxiv.org/pdf/1411.7718.pdf">PDF</A>]<br>-->
-            <!--<b>Tongliang Liu</b> and Dacheng Tao.<br>-->
-            <!--<b><i><a target="_blank" href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a></i></b>, 38(3): 447-461, 2016.<br/>-->
-            <!--</p></li>-->
-                  <!---->
-                  <!---->
-                  <!---->
-              <!--</ul>-->
-<!--See the full list <a href="publications.html">here</a>.-->
-<!--<div>-->
-
-      <!--<h2 style="font-family: Helvetica,Arial,sans-serif;"><o:p>&nbsp;</o:p></h2>-->
-      <!--<p>-->
-<!--&lt;!&ndash;         Last Update: 5/2019.<br> &ndash;&gt;-->
-
-        <p>
-            <!--         Last Update: 5/2019.<br> -->
-            <script src="//t1.extreme-dm.com/f.js" id="eXF-songhua-0" async defer></script>
-
-
-        </p>
-   <!---->
-<!--</p>-->
-<!--</div>-->
-
-</td>
-</tr>
-</table>
+<script src="/assets/js/jquery-2.1.1.min.js"></script>
+<script src="/assets/js/functions.js" type="text/javascript"></script>
 </body>
 </html>
